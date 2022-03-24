@@ -1,10 +1,12 @@
+using static System.Console;
+
 namespace SOLID_Principles
 {
     public class InterfaceSegregationPrinciple
     {
         public static void Execute()
         {
-            
+            WriteLine("\n *** Interface Segregation Principle \n");
         }
     }
 

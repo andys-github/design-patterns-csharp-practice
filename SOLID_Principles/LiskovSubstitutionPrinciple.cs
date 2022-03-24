@@ -6,7 +6,7 @@ namespace SOLID_Principles
     {
         public static void Execute()
         {
-            WriteLine("\n*** Liskov-Substitution Principle ***\n");
+            WriteLine("\n*** Liskov Substitution Principle ***\n");
             // 1. Create Rectangle class
             Rectangle rect = new Rectangle(10, 20);
             WriteLine($"Rectangle - {rect}, Area: {Area(rect)}");

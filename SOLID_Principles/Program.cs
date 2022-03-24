@@ -12,7 +12,9 @@ namespace SOLID_Principles
             
             // LiskovSubstitutionPrinciple.Execute();
             
-            InterfaceSegregationPrinciple.Execute();
+            // InterfaceSegregationPrinciple.Execute();
+            
+            DependencyInversionPrinciple.Execute();
         }
     }
 }

@@ -10,7 +10,7 @@ namespace SOLID_Principles
     {
         public static void Execute()
         {
-            WriteLine("\n*** Single-Responsibility Principle ***\n");
+            WriteLine("\n*** Single Responsibility Principle ***\n");
             
             var j = new Journal();
             j.AddEntry("It is a fine morning today.");
