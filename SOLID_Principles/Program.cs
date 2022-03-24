@@ -8,7 +8,9 @@ namespace SOLID_Principles
         {
             // SingleResponsibilityPrinciple.Execute();
             
-            OpenClosedPrinciple.Execute();
+            // OpenClosedPrinciple.Execute();
+            
+            LiskovSubstitutionPrinciple.Execute();
         }
     }
 }

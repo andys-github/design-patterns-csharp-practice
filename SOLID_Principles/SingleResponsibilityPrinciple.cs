@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using static System.Console;
 
 namespace SOLID_Principles
 {
@@ -9,16 +10,18 @@ namespace SOLID_Principles
     {
         public static void Execute()
         {
+            WriteLine("\n*** Single-Responsibility Principle ***\n");
+            
             var j = new Journal();
             j.AddEntry("It is a fine morning today.");
             j.AddEntry("Lets go outside and play!");
-            Console.WriteLine(j.ToString());
+            WriteLine(j.ToString());
             
             // ------------------------------
-            // var p = new Persistence();
-            // var filename = @"D:\file.txt";
-            // p.SaveToFile(j, filename, true);
-            // Process.Start("Notepad.exe", filename);
+            var p = new Persistence();
+            var filename = @"D:\file.txt";
+            p.SaveToFile(j, filename, true);
+            Process.Start("Notepad.exe", filename);
         }
     }
 

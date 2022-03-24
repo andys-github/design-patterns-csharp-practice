@@ -7,6 +7,8 @@ namespace SOLID_Principles
     {
         public static void Execute()
         {
+            WriteLine("\n*** Open-Closed Principle ***\n");
+            
             // Violating Open-Closed Principle
             var apple = new Product("Apple", Color.Green, Size.Small);
             var tree = new Product("Tree", Color.Green, Size.Large);
