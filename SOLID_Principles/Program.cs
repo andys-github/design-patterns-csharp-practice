@@ -6,7 +6,9 @@ namespace SOLID_Principles
     {
         static void Main(string[] args)
         {
-            SingleResponsibilityPrinciple.Execute();
+            // SingleResponsibilityPrinciple.Execute();
+            
+            OpenClosedPrinciple.Execute();
         }
     }
 }

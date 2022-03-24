@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 
 namespace SOLID_Principles
@@ -12,6 +13,12 @@ namespace SOLID_Principles
             j.AddEntry("It is a fine morning today.");
             j.AddEntry("Lets go outside and play!");
             Console.WriteLine(j.ToString());
+            
+            // ------------------------------
+            // var p = new Persistence();
+            // var filename = @"D:\file.txt";
+            // p.SaveToFile(j, filename, true);
+            // Process.Start("Notepad.exe", filename);
         }
     }
 
@@ -73,6 +80,7 @@ namespace SOLID_Principles
 
     public class Persistence
     {
+        // This class now provides separation of concern
         public void SaveToFile(Journal j, string filename, bool overwrite = false)
         {
             if (overwrite || !File.Exists(filename))
