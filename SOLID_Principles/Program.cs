@@ -10,7 +10,9 @@ namespace SOLID_Principles
             
             // OpenClosedPrinciple.Execute();
             
-            LiskovSubstitutionPrinciple.Execute();
+            // LiskovSubstitutionPrinciple.Execute();
+            
+            InterfaceSegregationPrinciple.Execute();
         }
     }
 }
